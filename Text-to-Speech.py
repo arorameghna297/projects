@@ -17,7 +17,7 @@ root.title(' - TEXT_TO_SPEECH')
 
 ##heading
 Label(root, text = 'TEXT_TO_SPEECH' , font='arial 20 bold' , bg ='white smoke').pack()
-Label(root, text ='DataFlair' , font ='arial 15 bold', bg = 'white smoke').pack(side = BOTTOM)
+Label(root, text ='text to speech' , font ='arial 15 bold', bg = 'white smoke').pack(side = BOTTOM)
 
 
 
@@ -40,8 +40,8 @@ entry_field.place(x=20 , y=100)
 def Text_to_speech():
     Message = entry_field.get()
     speech = gTTS(text = Message)
-    speech.save('DataFlair.mp3')
-    playsound('DataFlair.mp3')
+    speech.save('mp3')
+    playsound('mp3')
 
 def Exit():
     root.destroy()
